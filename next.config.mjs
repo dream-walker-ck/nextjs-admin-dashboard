@@ -1,8 +1,8 @@
 import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
 import createMDX from "@next/mdx";
-import type { NextConfig } from "next";
+/** @type {import("next").NextConfig} */
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   // Disable ESLint during build
   eslint: {
